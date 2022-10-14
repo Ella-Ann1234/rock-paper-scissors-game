@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f74ad5aa23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Ella's Rock papper scissors</title>
+  </head>
+  <body>
+   
+    <div class="welcomePage">
+      <form>
+        <label for="playerName">PLAYER NAME</label>
+        <input type="text" id="playerName" class="playerInput" />
+        <button class="enter" disabled type="submit">Enter</button>
+      </form>
+    </div>
+    <div class="gamePage">
+        <img src="cover-removebg-preview.png" alt="logo" class="logo" />
+      <div class="tools">
+        <div class="toolsName">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="toolsIcons">
+          <i class="fa-solid fa-hand-back-fist"></i>
+          <i class="fa-solid fa-hand"></i>
+          <i class="fa-solid fa-hand-scissors"></i>
+        </div>
+      </div>
+      <div class="gameArena">
+          <div class="leftPart">
+            <p class="player-Name">Ella</p>
+              <div class="icons playerChoice">
+                <div id="gameIcon" class=" rock">
+                  <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div id="gameIcon" class="paper"><i class="fa-solid fa-hand"></i></div>
+                <div id="gameIcon" class="scissors">
+                  <i class="fa-solid fa-hand-scissors"></i>
+                </div>
+              </div>
+            <p class="pick">Pick One</p>
+          </div>
+          <div class="middlePart">
+            <h3 class="middlePartHead">Wish You LUCK!</h3>
+            <div class="scoreCheck">
+              <p class="scoreBox">Score Box</p>
+              <div class="scoreBoard">
+              </div>
+            </div>
+            <button class="restart">Play Again</button>
+          </div>
+          <div class="rightPart">
+            <p class="comp">Computer</p>
+
+            <div class="icons computerChoice">
+                <div id="compIcon" class="rock">
+                  <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div id="compIcon" class="paper"><i class="fa-solid fa-hand"></i></div>
+                <div id="compIcon" class="scissors">
+                  <i class="fa-solid fa-hand-scissors"></i>
+                </div>
+            </div>
+            <button class="rules">Rules</button>
+          </div>
+      </div>
+    </div>
+    <div class="terms">
+      <p>
+        THE ROCK is a closed fist; PAPER is a flat hand with fingers and thumb
+        extended and the palm facing downwards; and SCISSORS is a fist with the
+        index and the middle fingers fully extended towards the opposing
+        player.ROCK wins against SCISSORS; PAPER Wins against ROCK;and SCISSORS
+        wims against PAPER. There are three rounds and whoever wins the most
+        rounds wins the game!
+      </p>
+      <button class="okay">okay</button>
+    </div>
+    <div class="gameWon">
+      <p class="gameWonHead">CONGRATS YOU WIN!!!</p>
+      <button class="restart">RESTART</button>
+    </div>
+  </body>
+</html>
